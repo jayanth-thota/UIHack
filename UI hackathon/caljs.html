@@ -1,0 +1,54 @@
+     <label>Select Package :</label>
+     <div class="radio">
+      <label><input type="radio" name="optradio" onclick="cal()">One time Assesment only (INR 500)</label>
+     </div>
+     <div class="radio">
+      <label><input type="radio" name="optradio" onclick="calc()">4 Weekly Sessions (INR 400/session)</label>
+
+     </div>
+     <div class="radio">
+      <label><input type="radio" name="optradio" onclick="calcu()">12 Weekly Sessions (INR 300/session)</label>
+     </div>
+     <div class="radio">
+      <div class="row">
+       <div class="col-lg-8">
+      	<label class="radio-inline"><input type="radio" name="optradio" onclick="myFun()">Others : </label><div id="oth"><input type="text" id="other" class="form-control" placeholder="Enter Trainer Name"><label>Quote will be shared on phone call</label></div>
+      </div>
+     </div>
+      <script>
+  	 function cal() {
+        	document.getElementById('inr').innerHTML = 500;
+        	document.getElementById('paisa').innerHTML=00;
+       	}
+       	function cacl() {
+        	document.getElementById('inr').innerHTML = 1600;
+        	document.getElementById('paisa').innerHTML=00;
+       }
+       function caclcu() {
+       		document.getElementById('inr').innerHTML = 3600;
+        	document.getElementById('paisa').innerHTML=00;
+       }
+       function myFun() {
+        	var x = document.getElementById("oth");
+        	if (x.style.display === "none") {
+	         	x.style.display = "block";
+        	} 
+		else {
+        		x.style.display = "none";
+        	}
+       }
+       </script>
+     <label>Quote</label>
+     <div class="row">
+      <div class="col-lg-3">
+     <div class="form-group">
+      <input type="text" class="form-control" id="inr" required>
+      <label>INR</label>
+     </div>
+     </div>
+     <div class="col-lg-3">
+      <div class="form-group">
+       <input type="text" class="form-control" id="paisa" required>
+       <label>Paisa</label></div>
+     </div>
+   </div>

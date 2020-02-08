@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <div class="container">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault1">FirstName</label>
+                    <input type="text" class="form-control" id="validationDefault1" placeholder="FirstName" required
+                        pattern="[a-zA-Z0-9]+">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault2">LastName</label>
+                    <input type="text" class="form-control" id="validationDefault2" placeholder="LastName" required
+                        pattern="[a-zA-Z0-9]+">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault3">age</label>
+                    <input type="number" class="form-control" size="6" name="age" min="18" max="90" value="21" id="validationDefault4" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault4">Email</label>
+                    <input type="email" class="form-control" id="validationDefault4" placeholder="Email" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault4">PhoneNumber</label>
+                    <input type="number" class="form-control" id="validationDefault5" placeholder="PhoneNumber"
+                        required>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <fieldset>
+                <legend>Address</legend>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="validationDefault01">Street Address</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="Street" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault03">City</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault04">State</label>
+                        <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault05">Country</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Country" required>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="validationDefault05">Zip</label>
+                        <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
+        <br>
+        </div>
+        <div class="container">
+            <form>
+                Trainer Preference:<br/>
+              
+                
+              <br>
+              
+              <script type="text/javascript">
+                  function EnableDisableTextBox() {
+              
+                      var chkYes = document.getElementById("chkYes");
+                      var trainerName = document.getElementById("trainerName");
+                      trainerName.disabled = chkYes.checked ? false : true;
+                      if (!trainerName.disabled) {
+                          trainerName.focus();
+                      }
+              
+                  }
+              </script>
+              <span>MaleTrainer</span>
+              <label for="chkYes">
+                  <input type="radio" id="chkYes" name="chkPassPort" onclick="EnableDisableTextBox()" />
+                  
+              </label>
+              <br>
+              <span>FeMaleTrainer</span>
+              <label for="chkYes">
+                  <input type="radio" id="chkYes1" name="chkPassPort" onclick="EnableDisableTextBox()" />
+                  
+              </label>
+              <br>
+              <span>no Preferences</span>
+              <label for="chkNo">
+                  <input type="radio" id="chkNo" name="chkPassPort" onclick="EnableDisableTextBox()" />
+                  
+              </label>
+              <br>
+              TrainerName:
+              <input type="text" id="trainerName" disabled="disabled" />
+              <br>
+              
+              
+                Do you need Pysiotherapist?:<br/>
+              <label><input type="radio" name="choice" value="yes">yes</label><br/>
+              
+              <label><input type="radio" name="choice" value="no">no</label><br/>
+              
+              
+              <br>
+		
+        <div formclass="container mt-3" style="border: 1px solid black;">
+
+            <table class="table table-hover">
+
+                <thead>
+
+                    <tr align="center">
+
+                        <th scope="col">DAY</th>
+
+                        <th scope="col">7am-9am</th>
+
+                        <th scope="col">9am-11am</th>
+
+                        <th scope="col">11am-1pm</th>
+
+                        <th scope="col">1pm-3pm</th>
+
+                        <th scope="col">3pm-5pm</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr align="center">
+
+                        <th scope="row">Monday</th>
+
+                        <td><input type="radio" name="monday"></td>
+
+                        <td><input type="radio" name="monday"></td>
+
+                        <td><input type="radio" name="monday"></td>
+
+                        <td><input type="radio" name="monday"></td>
+
+                        <td><input type="radio" name="monday"></td>
+
+                    </tr>
+
+
+
+                    <tr align="center">
+
+                        <th scope="row">Tuesday</th>
+
+                        <td><input type="radio" name="Tuesday"></td>
+
+                        <td><input type="radio" name="Tuesday"></td>
+
+                        <td><input type="radio" name="Tuesday"></td>
+
+                        <td><input type="radio" name="Tuesday"></td>
+
+                        <td><input type="radio" name="Tuesday"></td>
+
+                    </tr>
+
+
+
+                    <tr align="center">
+
+                        <th scope="row">Wednesday</th>
+
+                        <td><input type="radio" name="Wednesday"></td>
+
+                        <td><input type="radio" name="Wednesday"></td>
+
+                        <td><input type="radio" name="Wednesday"></td>
+
+                        <td><input type="radio" name="Wednesday"></td>
+
+                        <td><input type="radio" name="Wednesday"></td>
+
+                    </tr>
+
+
+                    <tr align="center">
+
+                        <th scope="row">Thursday</th>
+
+                        <td><input type="radio" name="Thursday"></td>
+
+                        <td><input type="radio" name="Thursday"></td>
+
+                        <td><input type="radio" name="Thursday"></td>
+
+                        <td><input type="radio" name="Thursday"></td>
+
+                        <td><input type="radio" name="Thursday"></td>
+
+                    </tr>
+
+
+                    <tr align="center">
+
+                        <th scope="row">Friday</th>
+
+                        <td><input type="radio" name="Friday"></td>
+
+                        <td><input type="radio" name="Friday"></td>
+
+                        <td><input type="radio" name="Friday"></td>
+
+                        <td><input type="radio" name="Friday"></td>
+
+                        <td><input type="radio" name="Friday"></td>
+
+                    </tr>
+
+       
+       
+       
+         <tr align=" center">
+
+                        <th scope="row">Satudrday</th>
+
+                        <td><input type="radio" name="Satudrday"></td>
+
+                        <td><input type="radio" name="Satudrday"></td>
+
+                        <td><input type="radio" name="Satudrday"></td>
+
+                        <td><input type="radio" name="Satudrday"></td>
+
+                        <td><input type="radio" name="Satudrday"></td>
+
+                    </tr>
+
+
+
+                    <tr align="center">
+
+                        <th scope="row">Sunday</th>
+
+                        <td><input type="radio" name="Sunday"></td>
+
+                        <td><input type="radio" name="Sunday"></td>
+
+                        <td><input type="radio" name="Sunday"></td>
+
+                        <td><input type="radio" name="Sunday"></td>
+
+                        <td><input type="radio" name="Sunday"></td>
+
+                    </tr>
+
+
+
+
+                </tbody>
+
+            </table>
+
+
+	</div>
+		<br>
+
+	     <label>Select Package :</label>
+     <div class="radio">
+      <label><input type="radio" name="optradio" onclick="cal()">One time Assesment only (INR 500)</label>
+     </div>
+     <div class="radio">
+      <label><input type="radio" name="optradio" onclick="calc()">4 Weekly Sessions (INR 400/session)</label>
+
+     </div>
+     <div class="radio">
+      <label><input type="radio" name="optradio" onclick="calcu()">12 Weekly Sessions (INR 300/session)</label>
+     </div>
+     <div class="radio">
+      <div class="row">
+       <div class="col-lg-8">
+      	<label class="radio-inline"><input type="radio" name="optradio" onclick="myFun()">Others : </label><div id="oth"><input type="text" id="other" class="form-control" placeholder="Enter Trainer Name"><label>Quote will be shared on phone call</label></div>
+      </div>
+     </div>
+      <script>
+  	 function cal() {
+        	document.getElementById('inr').innerHTML = 500;
+        	document.getElementById('paisa').innerHTML=00;
+       	}
+       	function cacl() {
+        	document.getElementById('inr').innerHTML = 1600;
+        	document.getElementById('paisa').innerHTML=00;
+       }
+       function caclcu() {
+       		document.getElementById('inr').innerHTML = 3600;
+        	document.getElementById('paisa').innerHTML=00;
+       }
+       function myFun() {
+        	var x = document.getElementById("oth");
+        	if (x.style.display === "none") {
+	         	x.style.display = "block";
+        	} 
+		else {
+        		x.style.display = "none";
+        	}
+       }
+       </script>
+     <label>Quote</label>
+     <div class="row">
+      <div class="col-lg-3">
+     <div class="form-group">
+      <input type="text" class="form-control" id="inr" required>
+      <label>INR</label>
+     </div>
+     </div>
+     <div class="col-lg-3">
+      <div class="form-group">
+       <input type="text" class="form-control" id="paisa" required>
+       <label>Paisa</label></div>
+     </div>
+
+   </div>
+<input type="submit" value="Submit form">
+              
+              </form>
+              
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
